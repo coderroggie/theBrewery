@@ -1,0 +1,7 @@
+# The directory 'assets' is required by the Yii framework.  
+# Therefore, it should remain in the Git repo.
+# However, you can NOT commit an empty directory to a Git repo, so this .gitignore was included.
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
