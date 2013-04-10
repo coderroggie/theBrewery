@@ -13,7 +13,6 @@
 	$clientScript->registerScriptFile('resources/js/external/handlebars.js');
 	
 	$clientScript->registerCssFile('resources/css/screen.css');
-	$clientScript->registerCssFile('resources/css/print.css');
 	
 	$clientScript->registerCssFile('resources/css/main.css');
 	$clientScript->registerCssFile('resources/css/form.css');
