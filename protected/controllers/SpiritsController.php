@@ -11,7 +11,7 @@ class SpiritsController extends Controller {
 		$brewsFile = new DataFile('brews.json');
 		$brews = $brewsFile->read();
 		
-		$this->render('brews', array('brews'=>$brews));
+		$this->render('spirits', array('brews'=>$brews));
 	}
 
 }
