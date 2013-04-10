@@ -29,9 +29,22 @@ return array(
 		),
 		*/
 	),
+		
+	'controllerMap'=>array(
+			'min'=>'application.components.extensions.minScript.controllers.ExtMinScriptController',
+	),
 
 	// application components
 	'components'=>array(
+		'minScript'=>array(
+				'class'=>'application.components.extensions.minScript.components.ExtMinScript',
+				'groupMap'=>array(
+						'minFiles'=>array(
+								'resources/js/external/mustache.js',
+								'resources/js/external/handlebars.js',
+						)
+				)
+		),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,

@@ -1,19 +1,29 @@
-<?php /* @var $this Controller */ ?>
+<?php /* @var $this Controller */ 
+
+	$baseUrl = Yii::app()->request->baseUrl;
+	$clientScript = Yii::app()->clientScript;
+
+	// Minify JavaScript Files:
+	Yii::app()->minScript->generateScriptMap('minFiles'); //Generate scriptMap for specified group
+	Yii::app()->minScript->generateScriptMap(); //Generate scriptMap for all groups
+	
+	$clientScript->registerCoreScript('jquery');
+	
+	$clientScript->registerScriptFile('resources/js/external/mustache.js');
+	$clientScript->registerScriptFile('resources/js/external/handlebars.js');
+	
+	$clientScript->registerCssFile('resources/css/screen.css');
+	$clientScript->registerCssFile('resources/css/print.css');
+	
+	$clientScript->registerCssFile('resources/css/main.css');
+	$clientScript->registerCssFile('resources/css/form.css');
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/css/ie.css" media="screen, projection" />
-	<![endif]-->
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/css/form.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
