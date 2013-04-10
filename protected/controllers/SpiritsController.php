@@ -7,7 +7,11 @@ class SpiritsController extends Controller {
 	 * when an action is not explicitly requested by users.
 	 */
 	public function actionSpirits() {
-		$this->render('brews');
+		
+		$brewsFile = new DataFile('brews.json');
+		$brews = $brewsFile->read();
+		
+		$this->render('brews', array('brews'=>$brews));
 	}
 
 }
