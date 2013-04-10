@@ -1,24 +1,24 @@
 <script id="brew-template" type="text/x-handlebars-template">
-{{#each brews}}
+{{#brews}}
 	<div class="brew">
     	<div class="brew-title">{{title}}</div>
     	<div class="brew-type">{{type}}</div>
     	<div class="brew-description">{{details.description}}</div>
     	<ul class="brew-additional">
-			{{#each details.additional}}
+			{{#details.additional}}
 				<li>
 					<span class="brew-additional-label">{{label}}</span>
 					<span class="brew-additional-details">{{details}}</span>
 				</li>
-			{{/each}}
-			{{#each details.reviews}}
+			{{/details.additional}}
+			{{#details.reviews}}
 				<li>
 					<span class="brew-additional-label">{{title}}</span>
 					<span class="brew-additional-details">{{details}}</span>
 				</li>
-			{{/each}}
+			{{/details.reviews}}
     	</ul>
 	</div>
-{{/each}}
+{{/brews}}
 </script>
 
