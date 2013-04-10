@@ -6,3 +6,5 @@ protected/runtime/*
 *.settings
 *.sublime-workspace
 *.sublime-project
+*.DS_Store
+*~
