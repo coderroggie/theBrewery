@@ -12,10 +12,10 @@
 	$clientScript->registerScriptFile('resources/js/external/mustache.js');
 	$clientScript->registerScriptFile('resources/js/external/handlebars.js');
 	
-	$clientScript->registerCssFile('resources/css/screen.css');
+	$clientScript->registerCssFile($baseUrl.'/resources/css/screen.css');
 	
-	$clientScript->registerCssFile('resources/css/main.css');
-	$clientScript->registerCssFile('resources/css/form.css');
+	$clientScript->registerCssFile($baseUrl.'/resources/css/main.css');
+	$clientScript->registerCssFile($baseUrl.'/resources/css/form.css');
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
