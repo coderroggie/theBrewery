@@ -42,6 +42,7 @@ return array(
 						'minFiles'=>array(
 								'resources/js/external/mustache.js',
 								'resources/js/external/handlebars.js',
+								'resources/js/billy.js',
 						)
 				)
 		),

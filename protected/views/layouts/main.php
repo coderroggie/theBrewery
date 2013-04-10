@@ -9,8 +9,9 @@
 	
 	$clientScript->registerCoreScript('jquery');
 	
-	$clientScript->registerScriptFile('resources/js/external/mustache.js');
 	$clientScript->registerScriptFile('resources/js/external/handlebars.js');
+	$clientScript->registerScriptFile('resources/js/external/handlebars.js');
+	$clientScript->registerScriptFile('resources/js/billy.js');
 	
 	$clientScript->registerCssFile($baseUrl.'/resources/css/screen.css');
 	
