@@ -8,3 +8,5 @@ protected/runtime/*
 *.sublime-project
 *.DS_Store
 *~
+.idea*
+*.iml
